@@ -27,6 +27,14 @@ h2{
 .content{
     max-width: 80%;
     margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.contenttop{
+    max-width:80%;
+    margin: 0 auto;
 }
 
 #top{
@@ -35,36 +43,49 @@ h2{
         top: 0;
         left: 0;
         right: 0;
-        height: 130px;
+
 }
 
 .logo{
-    float: left;
-    margin: 0 60px 0 0;
+/*     float: left;
+ */    margin: 20px  auto;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 50px;
-    color: #fff; 
+    color: #fefefe; 
     line-height: 48px;
+    text-align: center;
+
+}
+
+ul.menu {
+    text-align: center;
+    margin: 30px 0;
 
 }
 
 .menu li {
     list-style: none;
     display: inline-block;
-    margin: 60px 0 0 0;
     text-align: right;
 }
 
 
 .menu  li a {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 20px;
-    color: #fff;
+    font-size: 15px;
+    color: #fefefe;
     text-decoration: none;
-    padding: 0 20px;
+    padding: 0 10px;
     text-transform: uppercase;
+    padding: 20px;
 }
 
+.menu li a:hover{
+    background-color: #284b63;
+    color:#fefefe;
+    border-bottom: #284b63 solid 3px;
+
+}
 .profile-photo{
     border-radius: 10%;
     height: 180px;
@@ -77,4 +98,5 @@ h2{
 #aboutUs{
     display:inline-block;
     background-color: #D9D9D9;
+    
 }
