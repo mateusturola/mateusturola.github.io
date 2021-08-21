@@ -51,6 +51,15 @@ i {
 
 }
 
+#footer{
+    background-color: #3C6E71;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
 .logo{
 /*     float: left;
  */    margin: 20px  auto;
@@ -130,9 +139,15 @@ i#icone-habilidades {
     font-size: 120px;
     align-content: center;
     vertical-align: middle;
-    margin: 48px 49px 0 0;
-        float: right;
+    margin: 90px 49px 0 0;
+    float: right;
 }
+
+i#icone-habilidades:hover {
+    color: #3c6e71;
+
+}
+
 .habilidades-left{
     float: left;
     margin: 0 0 25px 0;
@@ -154,7 +169,70 @@ i#icone-habilidades {
     background-color:#284b63 ;
 }
 .habilidades-item li{
-    background-color: salmon;
-    list-style: ;
-    
+    font-size: 15px;
+    line-height: 30px;
+    list-style: inside square;
+
+}
+.habilidades-item li:hover{
+    border-bottom: #284b63 solid 2px;
+    text-transform: uppercase;
+    color: #284B63;
+}
+
+ul.recomenda{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    list-style: none;
+    margin: 0 15px;
+}
+li img{
+    width: 120px; 
+    padding: 0 0 20px 0 ;   
+}
+.recomenda li{
+    background-color: #fefefe;
+    padding: 20px;
+    text-align: center;
+    margin: 0 10px;
+
+}
+
+.recomenda li:hover{
+    background-color: #cacaca;
+}
+
+.recomenda a{
+    text-decoration: none;
+    color: #353535;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    }
+
+ .social i{
+    color: #284b63;
+    font-size: 30px;
+    display: inline-block;
+    justify-content: center;
+    align-items: stretch;
+    list-style: none;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.social i:hover{
+    color: #3c6e71;
+} 
+
+.top {
+    color: #3c6e71;
+    text-decoration: none;
+    color: #cacaca;
+    font-weight: 600;
+    text-transform: uppercase;
+
 }
