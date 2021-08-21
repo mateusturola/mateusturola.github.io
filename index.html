@@ -9,295 +9,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/d24fc83ca8.js" crossorigin="anonymous"></script>
+
     <title>Mateus Turola</title>
-    <style>
-    /* font-family: 'Roboto Condensed', sans-serif; */
-body{
-    background-color: #f3f3f3;
-    color:#353535;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    margin: 0 auto;
-
-}
-
-h1{
-    font-family: 'Roboto Condensed', sans-serif;
-    color: #284B63;
-    font-weight: 500;
-    letter-spacing: -1px;
-}
-
-h2{
-    font-family: 'Roboto Condensed', sans-serif;
-    color: #284B63;
-    font-weight: 400;
-    letter-spacing: 0px;
-}
-.espaco{
-    margin-bottom: 150px;
-}
-i {
-    margin: 95px 0;
-    font-size: 60px;
-    color: #cacaca;
-}
-.content{
-    max-width: 80%;
-    margin: 0 auto;
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-}
-
-.contenttop{
-    max-width:80%;
-    margin: 0 auto;
-}
-
-#top{
-        background-color: #3C6E71;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-
-}
-
-#footer{
-    background-color: #3C6E71;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-}
-
-.logo{
-/*     float: left;
- */    margin: 20px  auto;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 50px;
-    color: #fefefe; 
-    line-height: 48px;
-    text-align: center;
-
-}
-
-ul.menu {
-    text-align: center;
-    margin: 30px 0;
-
-}
-
-.menu li {
-    list-style: none;
-    display: inline-block;
-    text-align: right;
-}
-
-
-.menu  li a {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 15px;
-    color: #fefefe;
-    text-decoration: none;
-    padding: 0 10px;
-    text-transform: uppercase;
-    padding: 20px;
-}
-
-.menu li a:hover{
-    background-color: #284b63;
-    color:#fefefe;
-    border-bottom: #284b63 solid 3px;
-
-}
-.profile-photo{
-    height: 180px;
-    width: auto;
-    float: left;
-    margin: 0 15px 0 0;
-    vertical-align: middle;
-}
-
-
-.sections{
-    display:inline-block;
-    background-color: #D9D9D9;
-    padding: 20px;
-    min-width: 100%;
-}
-/* 
-.sections-2cols{
-    display:flex;
-    background-color: #D9D9D9;
-    padding: 20px;
-    min-width: 100%;
-} */
-
-#aboutUs p {
-    margin-bottom: -8px;
-}
-
-#aboutUs h2 {
-    margin: 0;
-}
-
-
-
-i#icone-habilidades {
-    color: #284b63;
-    float: right;
-    font-size: 120px;
-    align-content: center;
-    vertical-align: middle;
-    margin: 90px 49px 0 0;
-    float: right;
-}
-
-i#icone-habilidades:hover {
-    color: #3c6e71;
-
-}
-
-.habilidades-left{
-    float: left;
-    margin: 0 0 25px 0;
-}
-
-.button {
-    clear: both;
-    text-align: center;
-}
-
-.button a {
-    text-decoration: none;
-    background-color: #3c6e71;
-    padding: 15px;
-    color: #fefefe;
-
-}
-.button a:hover{
-    background-color:#284b63 ;
-}
-.habilidades-item li{
-    font-size: 15px;
-    line-height: 30px;
-    list-style: inside square;
-
-}
-.habilidades-item li:hover{
-    border-bottom: #284b63 solid 2px;
-    text-transform: uppercase;
-    color: #284B63;
-}
-
-ul.recomenda{
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    list-style: none;
-    margin: 0 15px;
-}
-li img{
-    width: 120px; 
-    padding: 0 0 20px 0 ;   
-}
-.recomenda li{
-    background-color: #fefefe;
-    padding: 20px;
-    text-align: center;
-    margin: 0 10px;
-
-}
-
-.recomenda li:hover{
-    background-color: #cacaca;
-}
-
-.recomenda a{
-    text-decoration: none;
-    color: #353535;
-}
-
-.social{
-    display: flex;
-    justify-content: center;
-    }
-
- .social i{
-    color: #284b63;
-    font-size: 30px;
-    display: inline-block;
-    justify-content: center;
-    align-items: stretch;
-    list-style: none;
-    margin: 0 5px;
-    text-decoration: none;
-}
-
-.social i:hover{
-    color: #3c6e71;
-} 
-
-.top {
-    color: #3c6e71;
-    text-decoration: none;
-    color: #cacaca;
-    font-weight: 600;
-    text-transform: uppercase;
-
-}
-    </style>
 </head>
 <body>
-    <div id="top">
+    <div class="content">
+        <div id="top"> 
+                <p class="logo"> < Mateus Turola > </p>
+                <ul class="menu">
+                    <li><a href="#quemSouEu">Quem sou eu</a></li>
+                    <li><a href="#habilidades">Minhas Habilidades</a></li>
+                    <li><a href="#recomenda">Mateus Recomenda</a></li>
+                    <li><a href="#contato">Fale Comigo</a></li>
+                </ul>
+            </div>   
 
-    <ol class="menu">
-        <li><a href="#nome">Nome</a></li>
-        <li><a href="#quemSouEu">Quem sou eu?</a></li>
-        <li><a href="#habilidades">Minhas Habilidades</a></li>
-        <li><a href="#recomenda">Mateus Recomenda</a></li>
-        <li><a href="#contato">Fale Comigo</a></li>
-    </ol>
-</div>
-    <hr>
-    <h1 id="nome"> Francisco Mateus Turola Procopio</h1>
+        <hr id="quemSouEu" class="espaco">
 
-    <div id="aboutUs"> 
-    <img class="profile-photo" src="img/foto-perfil.jpg" alt="Foto de perfil" width="200" id="foto-perfil">
 
-    <h2 id='quemSouEu'> Quem sou eu? </h2>
-        <p> Me chamo <em>Francisco Mateus</em>, mas todos me chamam só de <em>Mateus</em>. <br>Sou Brasileiro e estou morando em Barra Mansa/Rj </p>
-        <p>Gosto muito de aprender, e sou bem esforçado para desenvolver as demandas da melhor forma possivel.</p>
-        <p><strong> Busco sempre </strong> dar o meu melhor em minhas tarefas, seja ela profissional ou não.</p>  
+        <h1> Francisco Mateus Turola Procopio</h1>
+        <div class="sections"> 
+            <img class="profile-photo" src="img/foto-perfil.jpg" alt="Foto de perfil" width="200" id="foto-perfil">
+            <h2> Quem sou eu</h2>
+            <p> Me chamo <em>Francisco Mateus</em>, mas todos me chamam só de <em>Mateus</em>. <br>Sou Brasileiro e estou morando em Barra Mansa/Rj </p>
+            <p>Gosto muito de aprender, e sou bem esforçado para desenvolver as demandas da melhor forma possivel.</p>
+            <p><strong> Busco sempre </strong> dar o meu melhor em minhas tarefas, seja ela profissional ou não.</p>  
+        </div> 
+
+
+
+        <i class="fas fa-angle-double-down" id="habilidades"></i>
+        <div class="sections">
+            <div class="habilidades-left">
+                    <h2> Minhas Habilidades</h2>
+                <ul class="habilidades-item">
+                    <li>Html</li>
+                    <li>CSS</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Criação de Sites em Wordpress</li>
+                    <li>Design Grafico (Photoshop, CorelDraw e Ilustrator) </li>
+                </ul>
+            </div>
+            
+                <i class="fas fa-rocket" id="icone-habilidades"></i>
+           
+                <p class="button"><a href="#quemSouEu">Ver foto de perfil</a></p>
+        </div>
+
+
+
+        <i class="fas fa-angle-double-down" id="recomenda"></i>
+        <div class="sections">
+            <h2>Mateus Recomenda</h2>
+            <ul class="recomenda">
+                <li><a href="https://blog.betrybe.com/" target="_blank"><img src="img/logo_trybe.png" alt="Logo da Trybe" width="150"> <br> Blog da Trybe</a></li> 
+                <li><a href="https://www.codigofonte.com.br/" target="_blank"><img src="img/logo-codigo-fonte.jpg" alt="Logo do Código Fonte" width="150"> <br> Blog Código Fonte</a></li>
+
+                
+            </ul>
+        </div>
+        <i class="fas fa-angle-double-down" id="contato"></i>
+        <div class="sections">
+            <h2 >Fale comigo</h2>
+            <p> Você pode entrar em contato comigo pelos seguintes meios:</p>
+            <div class="social"> 
+                <a href="https://www.linkedin.com/in/mateus-turola/" target="_blank"><i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://wa.me/5524988545652" target="_blank" ><i class="fab fa-whatsapp-square"></i></a>
+            </div>
+        </div>
+        <a href="#quemSouEu" class="top"><i class="far fa-caret-square-up"></i></a>
+
     </div> 
-    <hr>
-    <h2 id="habilidades"> Minhas Habilidades</h2>
-    <ul>
-        <li>Html</li>
-        <li>CSS</li>
-        <li>Git</li>
-        <li>GitHub</li>
-        <li>Criação de Sites em Wordpress</li>
-        <li>Design Grafico (Photoshop, CorelDraw e Ilustrator) </li>
-    </ul>
-    <p><a href="#foto-perfil">Ver foto de perfil</a></p>
-    <hr>
-    <h2 id="recomenda">Mateus Recomenda</h2>
-    <ul>
-        <li><a href="https://blog.betrybe.com/" target="_blank"><img src="img/logo_trybe.png" alt="Logo da Trybe" width="150"> <br> Blog da Trybe</a></li> 
-        <li><a href="https://www.codigofonte.com.br/" target="_blank"><img src="img/logo-codigo-fonte.jpg" alt="Logo do Código Fonte" width="150"> <br> Blog Código Fonte</a></li>
-        <li><a href="https://www.youtube.com/c/BoniekyLacerdaLeal" target="_blank"><img src="img/logo-bonieky.jpg" alt="Logo do Bonieky Lacerda" width="150"> <br> Youtube do Bonieky Lacerda</a></li>
-        
-    </ul>
-    <hr>
-    <h2 id="contato">Fale comigo</h2>
-    <p> Você pode entrar em contato comigo pelos seguintes meios:</p>
-    <p>
-        <a href="https://www.linkedin.com/in/mateus-turola/" target="_blank"><img src="img/linkedin.png" height="20px"></a>
-        <a href="https://wa.me/5524988545652" target="_blank" ><img src="img/whatsapp.png" height="20px"></a>
-    </p>
 </body>
 </html>
