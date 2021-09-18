@@ -1,0 +1,73 @@
+body {
+  background: url('img/bg-page.jpg');
+  margin: 0 auto;
+}
+
+input {
+  border: 0;
+}
+
+main {
+  width: 70%;
+  background: #e8e8e8;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+section {
+  text-align: center;
+}
+
+button {
+  margin: 0 10px;
+  background: #75b447;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.color {
+  width: 40px;
+  height: 40px;
+  border: 1px black solid;
+  margin: 3px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#color-palette {
+  display: flex;
+  justify-items: stretch;
+  justify-content: center;
+}
+
+.pixel {
+  width: 40px;
+  height: 40px;
+  border: 1px black solid;
+  background-color: white;
+}
+
+.pixel-line {
+  display: flex;
+}
+
+#pixel-board {
+  margin: 20px auto;
+}
+
+#board-size {
+  width: 50px;
+  margin: 0;
+  background: #d6d6d6;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+button #generate-board {
+  margin-left: 0;
+}
+
+#controls {
+  margin: 15px 0;
+}
