@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d24fc83ca8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>CALCULADORA</title>
+</head>
+<body>
+  <div id="conteudo" class="container z-depth-1">
+    <h4><i class="fas fa-calculator"></i>CALCULADORA</h4>
+    <div class="campo-input input-field">
+      <input type="number" name="numero1" id="numero1" class="validate"> 
+      <label for="numero1" class="active">Número 1</label>
+    </div>
+    <div class="campo-input input-field">
+      <label for="numero2" class="active">Número 2</label>
+      <input type="number" name="numero2" id="numero2" class="validate"> 
+    </div>
+    <div class="operadores">
+      <button class="btn soma hoverable">
+        <i class="fas fa-plus"></i>
+      </button>
+      <button class="btn subtracao hoverable">
+        <i class="fas fa-minus"></i>
+      </button>
+      <button class="btn divisao hoverable">
+        <i class="fas fa-divide"></i>
+      </button>
+      <button class="btn multiplicacao hoverable">
+        <i class="fas fa-asterisk"></i>
+      </button>
+      <button class="btn limpar hoverable">
+        <i class="fas fa-redo-alt"></i>
+      </button>
+    </div>
+    <div class="card-panel teal resultado-box">
+      <div class="white-text">Resultado:</div>
+      <p class="resultado white-text"></p>
+    </div>
+  </div>
+  
+<script src="script.js"></script>
+</body>
+</html>
