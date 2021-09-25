@@ -5,12 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pokedex</title>
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 </head>
 <body>
   <header id="heder">
-
+    <div class="row">
+      <div class="input-field col s6">
+        <label for="coach">Nome do Treinador</label>
+        <input type="text" name="coach" id="coach">
+      </div>
+    </div>
   </header>
   <main id="main">
     <div id="capture-pokemon">
@@ -36,11 +41,13 @@
         <div class="row">
           <button id="capture">Capturar</button>
         </div>
-
       </form>
     </div>
     <div id="pokemon-colection">
-
+      <button id="bnt-colection">Exibir coleção</button>
+      <h3 id="title-collection"></h3>
+      <p id="text-collection"></p>
+      <div id="my-pokemon"></div>
     </div>
   </main>
   <footer id="footer">
