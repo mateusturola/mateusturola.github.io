@@ -16,9 +16,9 @@
     <div id="capture-pokemon">
       <h3>Capture o seu Pokemon</h3>
       <p>Insira os dados do seu pokemon no formulário abaixo.</p>
-      <form action="" method="get">
+      <form action="" method="get" >
         <div class="row">
-          <label for="name">Nome:</label>
+          <label for="name" >Nome:</label>
           <input type="text" name="name" id="name">
         </div>
         <div class="row">
@@ -26,17 +26,20 @@
           <input type="number" name="level" id="level" min="1" max="50" placeholder="Insira um número inteiro entre 1 e 50">
         </div>
         <div class="row">
-          <label for="name">Nome:</label>
-          <input type="text" name="name" id="name">
+          <label for="attack">Ataque:</label>
+          <input type="number" name="attack" id="attack" min="1" max="345" placeholder="Insira um número inteiro entre 1 e 345">
         </div>
         <div class="row">
-          <label for="name">Nome:</label>
-          <input type="text" name="name" id="name">
+          <label for="defense">Defesa:</label>
+          <input type="number" name="defense" id="defense" min="1" max="400" placeholder="Insira um número inteiro entre 1 e 400">
         </div>
-        
+        <div class="row">
+          <button id="capture">Capturar</button>
+        </div>
+
       </form>
     </div>
-    <div id="capture-pokemon">
+    <div id="pokemon-colection">
 
     </div>
   </main>
