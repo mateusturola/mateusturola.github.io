@@ -1,3 +1,22 @@
+@media screen and (max-width: 900px){
+  #header {
+    flex-direction: column;
+  }
+  #main {
+    flex-direction: column;
+  }
+
+  #capture-pokemon {
+  width: 100% !important;
+  }
+
+  #pokemon-colection {
+    width: 100% !important;
+  }
+  p.item {
+    font-size: 1.2em;
+  }
+}
 body{
   display: flex;
   flex-direction: column;
@@ -105,4 +124,13 @@ form {
 
 #bnt-save {
   margin: 0 15px 0 0;
+}
+
+p.item {
+  line-height: 0.4;
+  padding: 0 50px;
+}
+
+span.pokemon-name {
+  font-weight: 500;
 }

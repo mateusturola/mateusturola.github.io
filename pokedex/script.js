@@ -9,13 +9,13 @@ const colectionButton = document.querySelector('#bnt-colection');
 //CHAMA POKEMON COLLECTION
 const titleCol = document.querySelector('#title-collection');
 const textCol = document.querySelector('#text-collection');
-const myCol = document.querySelector('#my-pokemon');
+const myPokemon = document.querySelector('#my-pokemon');
 const clearButton = document.querySelector('#bnt-clear');
 
 
 window.onload = () => {
   const restoreColection = JSON.parse(localStorage.getItem('ColectionPok'));
-    myCol.innerHTML = restoreColection;
+    myPokemon.innerHTML = restoreColection;
   
 };
 
@@ -60,18 +60,19 @@ captureButton.addEventListener('click', (event) => {
 /* Crie uma função que exiba as informações de todos os pokemons em memória no seguinte formato: "Nome - Level - Ataque - Defesa" */
 const openPokedex = () => {
   if (pokedex.length === 0) {
-    return alert('Você ainda não capturou nenhum Pokemon :(!');
+    return alert('Você ainda não capturou nenhum Pokemon :(');
   } else {
+    // myPokemon.innerHTML = ''
     for (let index = 0; index < pokedex.length; index +=1) {
       const pokemons = Object.entries(pokedex[index]);
       for (key in pokemons) {
-        const pokemon = document.createElement('p')
-        myCol.appendChild(pokemon)
-        pokemon.innerHTML = `<span class="pokemon-name">${pokemons[key][0]}:</span>${pokemons[key][1]}`;
+        const pokemon = document.createElement('p');
+        myPokemon.appendChild(pokemon);
+        pokemon.innerHTML = `<span class="pokemon-name">${pokemons[key][0]}:</span>  ${pokemons[key][1]}`;
         pokemon.className = 'item';
       }   
     const pokemonSeparator = document.createElement('hr');
-    myCol.appendChild(pokemonSeparator);
+    myPokemon.appendChild(pokemonSeparator);
     pokemonSeparator.className = 'item';
     }
   }
@@ -92,12 +93,12 @@ colectionButton.addEventListener('click', () => {
 
 // ADD FUNÇÃO AO BOTÃO DE SALVAR LISTA DE POKEMON
 const savePokemon = () => {
-  localStorage.setItem('ColectionPok', JSON.stringify(myCol.innerHTML));
+  localStorage.setItem('ColectionPok', JSON.stringify(myPokemon.innerHTML));
 }
 
 const btnSave = document.querySelector('#bnt-save');
   btnSave.addEventListener('click', () =>{
-  localStorage.setItem('ColectionPok', JSON.stringify(myCol.innerHTML));
+  localStorage.setItem('ColectionPok', JSON.stringify(myPokemon.innerHTML));
 })
 
 // ADD BOTÃO DE LIMPAR COLEÇÃO
@@ -105,7 +106,7 @@ const btnSave = document.querySelector('#bnt-save');
 function clearAll (){
   const allItems = document.querySelectorAll('.item');
   for (let index = 0; index < allItems.length; index += 1) {
-    myCol.removeChild(allItems[index]);
+    myPokemon.removeChild(allItems[index]);
   }
 }
 
