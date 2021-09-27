@@ -11,7 +11,6 @@
 <body>
   <header id="header">
     <img src="/img/logo.png" id="logo-img" alt="" srcset="">
-    <h2>Pokedex</h2>
     <div class="input-field">
       <label for="coach">Nome do Treinador</label>
       <input type="text" name="coach" id="coach">
@@ -24,19 +23,28 @@
       <form action="" method="get" >
         <div class="row">
           <label for="name" >Nome do pokemon:</label>
-          <input type="text" name="name" id="name">
+          <input type="text" name="name" id="name" >
         </div>
         <div class="row">
           <label for="level">Nível:</label>
-          <input type="number" name="level" id="level" min="1" max="50" placeholder="Insira um número inteiro entre 1 e 50">
+          <p class="range-field">
+          <input type="number" name="level" id="level" min="1" max="50" placeholder="Insira um número inteiro entre 1 e 50" required>
+          </p>
+          
         </div>
         <div class="row">
           <label for="attack">Ataque:</label>
-          <input type="number" name="attack" id="attack" min="1" max="345" placeholder="Insira um número inteiro entre 1 e 345">
+          <p class="range-field">
+          <input type="number" name="attack" id="attack" min="1" max="345" placeholder="Insira um número inteiro entre 1 e 345" required>
+          </p>
+
         </div>
         <div class="row">
           <label for="defense">Defesa:</label>
-          <input type="number" name="defense" id="defense" min="1" max="400" placeholder="Insira um número inteiro entre 1 e 400">
+          <p class="range-field">
+          <input type="number" name="defense" id="defense" min="1" max="400" placeholder="Insira um número inteiro entre 1 e 400" required>
+          </p>
+
         </div>
         <div class="row">
           <button id="capture">Capturar</button>
@@ -48,8 +56,11 @@
       <button id="bnt-colection">Exibir coleção</button>
       <p id="text-collection"></p>
       <div id="my-pokemon"></div>
-      <button id="bnt-salve">Salvar Coleção</button>
-    </div>
+      <div id="controls">
+        <button id="bnt-save">Salvar Coleção</button>
+        <button id="bnt-clear">Limpar Coleção</button>
+      </div>
+      </div>
   </main>
   <footer id="footer">
     <p>Desenvolvido por Mateus Turola</p>

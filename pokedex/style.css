@@ -1,5 +1,4 @@
 body{
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,19 +14,15 @@ body{
 
 #logo-img{
   align-self: center;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
 }
 
 .input-field{
   align-self: center;
   width: 50%;
-}
-
-.input-field label{
-  font-size: 1em;
   color: rgb(100, 103, 107);
-  text-transform: uppercase;;
+  text-transform: uppercase;
 }
 
 #header h2 {
@@ -92,7 +87,22 @@ button:hover, button:focus{
 }
 
 label{
-  font-size: 1.2em;
+  font-size: 1em;
   color: rgb(100, 103, 107);
   text-transform: uppercase;
+}
+
+form {
+  margin: 40px 0 0 0;
+}
+
+#controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#bnt-save {
+  margin: 0 15px 0 0;
 }
