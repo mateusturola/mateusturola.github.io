@@ -60,8 +60,7 @@ captureButton.addEventListener('click', (event) => {
 /* Crie uma função que exiba as informações de todos os pokemons em memória no seguinte formato: "Nome - Level - Ataque - Defesa" */
 const openPokedex = () => {
   if (pokedex.length === 0) {
-    return alert('Você ainda não capturou nenhum Pokemon :(!')
-    
+    return alert('Você ainda não capturou nenhum Pokemon :(!');
   } else {
     for (let index = 0; index < pokedex.length; index +=1) {
       const pokemons = Object.entries(pokedex[index]);
