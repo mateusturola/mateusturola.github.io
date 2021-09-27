@@ -9,12 +9,12 @@ const ColectionButton = document.querySelector('#bnt-colection');
 //CHAMA POKEMON COLLECTION
 const titleCol = document.querySelector('#title-collection');
 const textCol = document.querySelector('#text-collection');
-const myCol = document.querySelector('#my-pokemon');
+let myCol = document.querySelector('#my-pokemon');
 const controls = document.querySelector('#controls');
 
 
 /* Crie uma função que recebe Nome, Level, Ataque e Defesa e guarda essas informações em um objeto */
-const pokedex = [];
+let pokedex = [];
 
 const camera = () => {
   pokedex.push({
@@ -23,68 +23,58 @@ const camera = () => {
     Ataque: attackInput.value,
     Defesa: defenseInput.value });
     alert(`${nameInput.value} Capturado!`)
-    console.log(pokedex)
-  return pokedex;
-};
-
-
-captureButton.addEventListener('click', (event) =>{
-event.preventDefault();
-camera();
-})
-
-    
-// EXIBIR COLEÇÃO
-
-/* Crie uma função que exiba as informações de todos os pokemons em memória no seguinte formato: "Nome - Level - Ataque - Defesa" */
-const openPokedex = () => {
-  for (let index = 0; index < pokedex.length; index +=1) {
-  const pokemons = Object.entries(pokedex[index]);
-    for (key in pokemons) {
-      const pokemon = document.createElement('p')
-      myCol.appendChild(pokemon)
-      pokemon.innerHTML = `<span class="pokemon-name">${pokemons[key][0]}:</span>${pokemons[key][1]}`;
-    }   
-    const pokemonSeparator = document.createElement('hr')
-    myCol.appendChild(pokemonSeparator)
-  }
-}
-
-// ADD CONTROLES
-const CpntrolCreate = () {
+    return pokedex;
+  };
   
-}
-// ADD TITULO E TEXTO
-
-ColectionButton.addEventListener('click', () => {
-  const coachInput = document.querySelector('#coach');
-
-  titleCol.innerHTML = `Coleção do ${coachInput}`;
-  textCol.innerHTML = 'sasdasdadlaksda asdmasdakdmas'
-  const pokemonDiv = document.createElement('div')
-  myCol.appendChild(pokemonDiv)
-  pokemonDiv.innerHTML = openPokedex();
-
-});
-
-
-
-// ADD FUNÇÃO AO BOTÃO DE SALVAR LISTA DE POKEMON
-let btnSave = document.querySelector('#salvar-pokemons')
-
-function saveTasks() {
-const lisTask = document.querySelector('#lista-tarefas');
-
-  localStorage.setItem('taskList', JSON.stringify(lisTask.innerHTML));
-
-}
-window.onload = function () {
-  const orderList = document.querySelector('#lista-tarefas');
-  const restoreList = JSON.parse(localStorage.getItem('taskList'));
-  if (restoreList !== null) {
-    orderList.innerHTML = restoreList;
+  
+  captureButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    camera();
+  });
+  
+  
+  // EXIBIR COLEÇÃO
+  
+  /* Crie uma função que exiba as informações de todos os pokemons em memória no seguinte formato: "Nome - Level - Ataque - Defesa" */
+  const openPokedex = () => {
+    for (let index = 0; index < pokedex.length; index +=1) {
+      const pokemons = Object.entries(pokedex[index]);
+      for (key in pokemons) {
+        const pokemon = document.createElement('p')
+        myCol.appendChild(pokemon)
+        pokemon.innerHTML = `<span class="pokemon-name">${pokemons[key][0]}:</span>${pokemons[key][1]}`;
+      }   
+      const pokemonSeparator = document.createElement('hr')
+      myCol.appendChild(pokemonSeparator)
+    }
   }
-};
+  // ADD CONTROLES
 
+  
+  // ADD TITULO E TEXTO
+  ColectionButton.addEventListener('click', () => {
+    const coachInput = document.querySelector('#coach');
+    titleCol.innerHTML = `Pokedex do ${coachInput.value}`;
+    const pokemonDiv = document.createElement('div');
+    myCol.appendChild(pokemonDiv);
+    pokemonDiv.innerHTML = openPokedex();
+      btnSave.addEventListener('click', savePokemon())
 
-btnSave.addEventListener('click', saveTasks )
+  });
+  
+  
+  
+  // ADD FUNÇÃO AO BOTÃO DE SALVAR LISTA DE POKEMON
+  const savePokemon = () => {
+    localStorage.setItem('ColectionPok', JSON.stringify(myCol.innerHTML));
+  }
+  
+  const btnSave = document.querySelector('#bnt-salve');
+  
+  
+  
+  window.onload = () => {
+    const restoreColection = JSON.parse(localStorage.getItem('ColectionPokemon'));
+      myCol.innerHTML = restoreColection;
+    
+  };

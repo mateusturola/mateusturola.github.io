@@ -6,24 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pokedex</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header id="heder">
-    <div class="row">
-      <div class="input-field col s6">
-        <label for="coach">Nome do Treinador</label>
-        <input type="text" name="coach" id="coach">
-      </div>
+  <header id="header">
+    <img src="/img/logo.png" id="logo-img" alt="" srcset="">
+    <h2>Pokedex</h2>
+    <div class="input-field">
+      <label for="coach">Nome do Treinador</label>
+      <input type="text" name="coach" id="coach">
     </div>
   </header>
   <main id="main">
-    <div id="capture-pokemon">
+    <div id="capture-pokemon" class="content">
       <h3>Capture o seu Pokemon</h3>
       <p>Insira os dados do seu pokemon no formulário abaixo.</p>
       <form action="" method="get" >
         <div class="row">
-          <label for="name" >Nome:</label>
+          <label for="name" >Nome do pokemon:</label>
           <input type="text" name="name" id="name">
         </div>
         <div class="row">
@@ -43,16 +43,16 @@
         </div>
       </form>
     </div>
-    <div id="pokemon-colection">
+    <div id="pokemon-colection" class="content">
+      <h3 id="title-collection">Pokedex</h3>
       <button id="bnt-colection">Exibir coleção</button>
-      <h3 id="title-collection"></h3>
       <p id="text-collection"></p>
       <div id="my-pokemon"></div>
-      <div id="controls"></div>
+      <button id="bnt-salve">Salvar Coleção</button>
     </div>
   </main>
   <footer id="footer">
-
+    <p>Desenvolvido por Mateus Turola</p>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
