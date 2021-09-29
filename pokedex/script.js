@@ -16,7 +16,6 @@ const clearButton = document.querySelector('#bnt-clear');
 window.onload = () => {
   const restoreColection = JSON.parse(localStorage.getItem('ColectionPok'));
     myPokemon.innerHTML = restoreColection;
-  
 };
 
 
