@@ -3,31 +3,37 @@
   margin:0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #E5E5E5;
   color: #353535;
 
+}
+body{
+  background-color: #E5E5E5;
 }
 
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
+  padding: 20px 200px;
 }
 
-#header h4 {
-  font-size: 1.4em;
+#header h4, .title-section {
+  font-size: 1.6em;
   font-weight: 500;
   color: #284B63;
+  cursor: pointer;
+
 }
 
-#header h4:hover {
+#header h4:hover, .title-section:hover {
   color:#3C6E71;
 }
 
 #menu .menu-item {
   color: #353535;
   text-decoration: none;
+  cursor: pointer;
+
 }
 
 #menu .menu-item:hover {
@@ -41,7 +47,13 @@ a.menu-item.margin {
 
 #hero {
   display: flex;
-  padding: 20px 10%;
+  padding: 60px 200px;
+}
+
+#rigth-hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .title{
@@ -62,7 +74,7 @@ a.menu-item.margin {
 }
 
 .text {
-  margin: 30px 0;
+  margin: 30px 0 40px 0;
   width: 70%;
 }
 
@@ -73,10 +85,12 @@ button {
   color: #F6F4F4;
   text-transform: uppercase;
   font-weight: 500;
+  cursor: pointer;
+
 }
 
 button:hover {
-  background-color: #284B63;
+  background-color: #284B63;]
 }
 
 .img-perfil {
@@ -96,5 +110,60 @@ button:hover {
 }
 
 #paralax {
-  background: url(img/paralax.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(img/paralax.jpg) 40%;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 100px;
+  opacity: 0.85;
+}
+
+.quote {
+  font-size: 1.7em;
+  font-weight: 400;
+  background: none;
+  color: #E5E5E5;
+  text-shadow: 2px 1px 2px rgba(0,0,0,0.6);
+}
+
+#projects {
+  padding: 60px 40px;
+
+}
+
+.container{
+  /* display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+   */
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3C6E71;
+  padding: 20px 200px;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+#footer i {
+  font-size: 1.8em;
+  color: #E5E5E5;
+  padding: 5px;
+  margin: 0 0 10px 0;
+}
+
+#footer i:hover {
+  color: #b4b4b4;
+}
+
+#footer p {
+  color: #E5E5E5;
+  font-size: 0.8em;
 }
