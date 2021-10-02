@@ -22,6 +22,10 @@
   .text{
     width: 100% !important;
   }
+
+  #footer {
+    padding: 20px 0;
+  }
   
 }
 
