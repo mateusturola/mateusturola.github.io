@@ -31,8 +31,8 @@
   padding: 0;
   box-sizing: border-box;
   color: #353535;
-
 }
+
 body{
   background-color: #E5E5E5;
 }
@@ -142,7 +142,13 @@ button {
   text-transform: uppercase;
   font-weight: 500;
   cursor: pointer;
+  text-decoration: none;
+  color: auto;
+}
 
+button a{
+  color: #F6F4F4;
+  text-decoration: none;
 }
 
 button:hover {
