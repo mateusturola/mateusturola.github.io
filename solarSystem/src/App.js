@@ -4,6 +4,7 @@ import Missions from './components/Missions';
 import SolarSystem from './components/SolarSystem';
 import './App.css'
 import Stars from './components/Stars';
+import Footer from './components/footer';
 
 
 
@@ -15,8 +16,7 @@ class App extends Component {
         <Header />
         <SolarSystem />
         <Missions />
-
-
+        <Footer />
       </div>
       
     );

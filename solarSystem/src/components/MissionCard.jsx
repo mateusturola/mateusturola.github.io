@@ -8,9 +8,9 @@ class MissionCard extends Component {
     return (
       <div className="mission-card">
         <h4 className="name-planet">{name}</h4>
-        <p className="mission-info">{year}</p>
-        <p className="mission-info">{country}</p>
-        <p className="mission-info">{destination}</p>
+        <p className="mission-info"><i class="fas fa-star"></i> {year}</p>
+        <p className="mission-info"><i class="fas fa-flag"></i> {country}</p>
+        <p className="mission-info"><i class="fas fa-space-shuttle"></i> {destination}</p>
 
       </div>
     );
