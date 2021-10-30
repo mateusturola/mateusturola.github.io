@@ -2,24 +2,37 @@
 
 body {
   color: rgb(222, 222, 222);
-  text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 20px;
   margin: 0;
+  cursor: url(images/rocket.svg),auto;
 }
 
 h1 {
   font-family: 'Changa One', cursive;
+  text-align: center;
   text-transform: uppercase;
   font-size: 3em;
   font-weight: 200;
+  text-shadow: -9px -2px 1em rgb(229, 137, 36), 0 0 0.2em rgb(229, 137, 36);
 }
 
 h2 {
   font-family: 'Changa One', cursive;
+  text-align: center;
   text-transform: uppercase;
   font-size: 2em;
   font-weight: 200;
+  text-shadow: 0 0 0.2em rgb(119, 119, 255), 0 0 0.2em rgb(119, 119, 255);
+}
+
+h3 {
+  font-family: 'Changa One', cursive;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 200;
+  text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87;
 }
 
 ul {
@@ -42,13 +55,31 @@ ul {
   margin: 2% 2%;
 }
 
+h1:hover{
+	animation-name: bounce-bottom;
+}
+
 .name-planet {
   font-family: 'Changa One', cursive;
+  text-align: center;
   text-transform: uppercase;
   font-size: 1.2em;
   font-weight: 50;
+  text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87;
+
 }
 
-.App {
-  text-align: center;
+.missions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 5%;
 }
+
+.mission-card {
+  background-color: #323232;
+  width: 300px;
+  padding: 20px;
+  margin: 15px;
+}
+
