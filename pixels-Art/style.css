@@ -1,6 +1,13 @@
-body {
+/* body {
   background: url('img/bg-page.jpg');
   margin: 0 auto;
+} */
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between ;
 }
 
 input {
